@@ -1,10 +1,9 @@
 import React from 'react';
+import Home from './View/Home/home'
 
 function App() {
   return (
-    <div>
-      <h1>Hello, React!</h1>
-    </div>
+   <Home/>
   );
 }
 

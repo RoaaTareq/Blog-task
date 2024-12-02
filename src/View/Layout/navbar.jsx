@@ -3,7 +3,9 @@ import React from 'react'
 function Navbar(){
     return(
       <nav>
-        <div className="container"></div>
+        <div className="container">
+            
+        </div>
       </nav>
     )
 }
