@@ -1,10 +1,9 @@
-// src/App.js
 import React from 'react';
 
 function App() {
   return (
     <div>
-      <h1>Welcome to my Blog!</h1>
+      <h1>Hello, React!</h1>
     </div>
   );
 }
