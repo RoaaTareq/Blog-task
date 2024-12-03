@@ -15,3 +15,26 @@ body {
     filter: brightness(50%);
   }
 }
+.blog {
+  &__abstract {
+    padding: 20px; // Optional: padding for spacing inside the section
+    
+    &-heading {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      margin-bottom: 15px; // Optional: Adds space below the heading
+    }
+
+    &-text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: left;
+      max-width: 100%;   // Optional: Ensure text takes full width, but adjusts for responsiveness
+      width: 100%;       // Flexibility for smaller screens
+      margin-bottom: 20px; // Optional: Adds space below the text
+    }
+  }
+}

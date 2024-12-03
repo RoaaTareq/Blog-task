@@ -1,0 +1,23 @@
+.blog {
+    &__intro {
+      margin-bottom: 30px; // Space between this section and the next one
+      padding: 20px;       // Padding to give some breathing room inside the section
+      background-color: #f9f9f9; // Light background color to differentiate it
+      border-radius: 8px;   // Optional: for rounded corners on the intro section
+  
+      &-text {
+        font-size: 16px;    // Set font size for the paragraph
+        line-height: 1.6;   // Line height for readability
+        color: #333;        // Dark text color for better contrast
+        margin-bottom: 15px; // Space between paragraphs
+      }
+  
+      &-first-letter {
+        font-size: 36px;   // Larger font size for the letter "L"
+        font-weight: bold; // Make the "L" bold
+        color: #2c3e50;    // Dark color for the first letter
+        margin-right: 5px; // Space between the large letter and the rest of the text
+      }
+    }
+  }
+  

@@ -1,0 +1,41 @@
+.tags {
+    &__container {
+      padding: 20px;
+    }
+  
+    &__title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+  
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    &__group {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      width: 100%;
+      & + & {
+        margin-top: 10px; // Adds space between each group
+      }
+    }
+  
+    &__item {
+      background-color: #f0f0f0;
+      padding: 8px 16px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 400;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+  
