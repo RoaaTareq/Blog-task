@@ -1,0 +1,92 @@
+// Footer.scss
+
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 34.35px 0;
+
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;  // Allow items to wrap to new lines on small screens
+    }
+
+    &__item {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17.07px;
+        margin: 0 15px;
+
+        // Add hover effect for interactivity
+        &:hover {
+            color: #f39c12; // Add a hover color
+        }
+    }
+
+    &__text {
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 12.19px;
+        text-align: center;      
+        color: #F0F0F0; 
+        margin-top: 20px;
+    }
+
+    // Media Queries for Responsiveness
+
+    @media (max-width: 1200px) {
+        &__container {
+            width: 90%;  // Reduce container width for medium screens
+        }
+
+        &__item {
+            font-size: 13px;  // Slightly smaller text for medium screens
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__list {
+            flex-direction: column;  // Stack the menu items vertically on small screens
+            align-items: center;  // Center-align the items
+        }
+
+        &__item {
+            margin: 10px 0;  // Reduce spacing between items
+        }
+
+        &__text {
+            font-size: 9px;  // Make the text smaller on smaller screens
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        &__container {
+            width: 95%;  // Further reduce container width on very small screens
+        }
+
+        &__item {
+            font-size: 12px;  // Reduce font size even more on mobile screens
+        }
+
+        &__text {
+            font-size: 8px;  // Further reduce the font size
+            margin-top: 5px;
+        }
+    }
+}
