@@ -1,0 +1,52 @@
+.top-section {
+    position: relative; // Allows positioning of elements inside the container
+    width: 100%;
+    height: 400px; // Adjustable height for the section
+
+    &__container {
+        position: relative; // Ensures child elements can be positioned relative to this container
+        width: 100%;
+        height: 100%;
+    }
+
+    &__image {
+        width: 100%;
+        
+        object-fit: cover; // Ensures the image covers the full container without distortion
+        position: absolute; // Positions image behind the text
+        top: 0;
+        left: 0;
+       
+        height: 100%;
+      
+        filter: brightness(50%);
+    }
+    
+
+    &__category {
+        position: absolute;
+        top: 20px; // Adjustable space from the top
+        left: 50%;
+        transform: translateX(-50%); // Centers the category text horizontally
+        background: rgba(0, 0, 0, 0.5); // Semi-transparent background to enhance readability
+        color: white;
+        padding: 8px 16px;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    &__title {
+        position: absolute;
+        bottom: 30px; // Adjustable space from the bottom
+        left: 50%;
+        transform: translateX(-50%); // Centers the title horizontally
+        color: white;
+        font-size: 60px;
+        font-weight: 700;
+        text-align: center;
+        width:679px; // Optional: limits the width of the title to prevent it from becoming too wide
+        line-height: 1.2;
+    }
+}

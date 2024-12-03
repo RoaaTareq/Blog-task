@@ -1,0 +1,49 @@
+.main-blog {
+    
+
+    &__container {
+        display: flex;
+        justify-content: space-between; /* Distribute space evenly */
+        gap: 20px; /* Add gap between columns */
+        flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+    }
+
+    &__col {
+       
+        padding: 20px;
+        
+      
+        flex: 1; 
+       
+    }
+
+    &__col--1,
+    &__col--3 {
+        flex: 1; /* These columns will take equal width by default */
+    }
+
+    &__col--2 {
+        flex: 2; /* This column is twice as wide as others */
+    }
+
+   
+
+    /* Responsive design for smaller screens */
+    @media (max-width: 768px) {
+        &__container {
+            flex-direction: column; /* Stack columns vertically */
+            gap: 10px; /* Reduce gap between columns */
+        }
+
+        &__col {
+            flex: 1 1 100%; 
+        }
+    }
+
+    
+    @media (max-width: 480px) {
+        &__container {
+            gap: 5px; 
+        }
+    }
+}

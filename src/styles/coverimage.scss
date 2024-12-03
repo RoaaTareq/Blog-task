@@ -1,0 +1,84 @@
+.cover-image {
+   
+   
+
+    &__container {
+        display: flex;
+        
+    }
+
+    &__description {
+        font-style: italic;
+        padding: 0 20px;
+        font-size: 14px;
+        line-height: 1.6;
+
+        b {
+            font-weight: bold;
+        }
+    }
+
+    &__social-icons {
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__followers {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    &__social-links {
+        display: flex;
+        gap: 15px; /* Adjust the gap between icons */
+        justify-content: center;
+        flex-wrap: wrap;
+        border-radius: 50%;
+        width: 50%;
+        height: 50%;
+    }
+
+    &__social-icon {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        
+    }
+
+    /* Media Queries for responsive design */
+    @media (max-width: 768px) {
+        .cover-image__container {
+            padding: 20px;
+        }
+
+        .cover-image__description p {
+            font-size: 12px; /* Reduce font size for smaller screens */
+        }
+
+        .cover-image__social-links {
+            gap: 10px; /* Smaller gap between icons */
+        }
+
+        .cover-image__social-icon {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .cover-image__description p {
+            font-size: 11px; /* Further reduce font size for small devices */
+        }
+
+        .cover-image__social-icon {
+            width: 30px;
+            height: 30px; /* Smaller icons on small screens */
+        }
+    }
+}
