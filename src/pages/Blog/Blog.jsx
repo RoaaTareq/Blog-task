@@ -4,6 +4,7 @@ import Abstract from './Blogsection/Abstract';
 import SubSection from './Blogsection/subsection';
 import Conclusion from './Blogsection/Conclusion';
 import Charts from './Blogsection/Chart';
+import TagsBlogs from './Blogsection/TagsBlog';
 
 function Blog() {
     return (
@@ -14,6 +15,7 @@ function Blog() {
             <SubSection/>
             <Charts/>
             <Conclusion/>
+            <TagsBlogs/>
 
               
 

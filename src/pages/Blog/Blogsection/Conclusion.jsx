@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../../../styles/summary.scss'
 function Conclusion() {
     return (
         <div className="conclusion__container">
