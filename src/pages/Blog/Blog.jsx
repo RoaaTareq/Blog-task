@@ -12,8 +12,8 @@ function Blog() {
             <Intro/>
             <Abstract/>
             <SubSection/>
-            <Charts/>
-            <Conclusion/>
+            {/* <Charts/>
+            <Conclusion/> */}
 
               
 
