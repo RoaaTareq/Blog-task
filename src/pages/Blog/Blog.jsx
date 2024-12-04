@@ -6,6 +6,7 @@ import Conclusion from './Blogsection/Conclusion';
 import Charts from './Blogsection/Chart';
 import TagsBlogs from './Blogsection/TagsBlog';
 import CardBlog from './Blogsection/CardBolg';
+import Author from './Blogsection/Auther';
 
 function Blog() {
     return (
@@ -18,6 +19,7 @@ function Blog() {
             <Conclusion/>
             <TagsBlogs/>
             <CardBlog/>
+            <Author/>
 
               
 
