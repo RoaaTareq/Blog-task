@@ -3,14 +3,20 @@ import '../../../styles/Introductionblog.scss'; // Importing the SCSS file
 
 function Intro() {
     return (
-        <div className="blog__intro">
-            <p className="blog__intro-text">
-                <span className="blog__intro-first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et Lorem ipsum dolor sit amet,
+        <section>
+             <div className="intro__container">
+            <span className="intro__first-letter">L</span>
+            <p className="intro__paragraph">
+            orem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et Lorem ipsum dolor sit amet, 
             </p>
-            <p className="blog__intro-text">
+           
+        </div>
+             <p className="intro__paragraphtwo">
                 consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam elit amet. Lacinia cursus morbi dui vulputate.
             </p>
-        </div>
+        </section>
+       
+
     );
 }
 

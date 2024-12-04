@@ -1,0 +1,55 @@
+.blog {
+    &__quote-section {
+      display: flex;
+      align-items: center;
+         }
+  
+    &__quote {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px; // Adds space below the quote section
+    }
+  
+    &__quote-iconone {
+      width: 120px; // Adjust the size of the icons
+      height: 120px;
+     position: absolute;
+     left: 25%;
+     z-index: -1;
+
+    }
+    &__quote-icon {
+      width: 120px; // Adjust the size of the icons
+      height: 120px;
+     position: absolute;
+     left: 20%;
+     z-index: -1;
+    
+
+    }
+  
+    &__quote-text {
+      font-size: 26px;
+      font-weight: 300;
+      line-height: 40px;
+     width: 294px;
+    text-align: left;
+    font-family: "Noto Serif", serif;
+     
+
+    }
+  
+    &__chart {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px; // Adds space above the chart image
+    }
+  
+    &__chart-image {
+      width: 387px; // Makes sure the chart image takes the full width
+     
+    }
+  }
+  

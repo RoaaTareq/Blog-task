@@ -3,12 +3,13 @@ import Facebook from '../../../assets/Component9.svg';
 import Twitter from '../../../assets/Component11.svg';
 import YouTube from '../../../assets/Component10.svg';
 import Linkedin from '../../../assets/Component12.svg';
+import '../../../styles/fellow.scss'
 
 function Fellow() {
     return (
         <section className="fellow">
             <div className="fellow__container">
-                <h6 className="fellow__title">Fellow</h6>
+                <h6 className="fellow__title">Fellow Us</h6>
                 <div className="fellow__social-icons">
                     <img className="fellow__social-icon" src={Facebook} alt="facebook" />
                     <img className="fellow__social-icon" src={Twitter} alt="twitter" />

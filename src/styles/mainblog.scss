@@ -10,7 +10,7 @@
 
     &__col {
        
-        padding: 20px;
+       
         
       
         flex: 1; 
@@ -23,7 +23,10 @@
     }
 
     &__col--2 {
-        flex: 2; /* This column is twice as wide as others */
+        flex: 1; 
+     
+        border-left: 1px solid #F0F0F0;
+        border-right: 1px solid #F0F0F0;
     }
 
    
