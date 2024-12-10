@@ -10,3 +10,33 @@
 .second-section{
     width: 577.5px;
 }
+
+
+/* Media query for tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+    /* Styles specific for tablets go here */
+    .main-blog__container{
+        flex-direction: column;
+    }
+    .first-section{
+        order: 2;
+        flex-direction: column;
+    }
+    .second-section{
+        order: 1;
+    }
+
+}
+/* Media query for mobiles */
+@media (max-width: 600px) {
+    .main-blog__container{
+        flex-direction: column;
+    }
+    .first-section{
+        order: 2;
+        flex-direction: column;
+    }
+    .second-section{
+        order: 1;
+    }
+}

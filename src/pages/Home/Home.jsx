@@ -4,6 +4,7 @@ import Footer from '../../components/footer'
 import Card from '../../components/card'
 import MainBlog from './MainBlog'
 import Navbar from '../Layout/navbar'
+import Slider from '../../components/slider'
 
 function Home(){
     return(
@@ -13,6 +14,7 @@ function Home(){
         <TopSection/>
         <MainBlog/>
         <Card/>
+        {/* <Slider/> */}
         <Footer/>
       </>
        
