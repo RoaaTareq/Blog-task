@@ -11,9 +11,9 @@ function Home(){
       <>
       <Navbar/>
         <TopSection/>
-        {/* <MainBlog/>
+        <MainBlog/>
         <Card/>
-        <Footer/> */}
+        <Footer/>
       </>
        
     )

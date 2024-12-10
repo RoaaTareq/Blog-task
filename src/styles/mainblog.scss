@@ -4,18 +4,17 @@
     &__container {
         display: flex;
         justify-content: space-between; /* Distribute space evenly */
-        gap: 20px; /* Add gap between columns */
-        flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+        
     }
 
-    &__col {
+    // &__col {
        
        
         
       
-        flex: 1; 
+    //     flex: 1; 
        
-    }
+    // }
 
     &__col--1,
     &__col--3 {

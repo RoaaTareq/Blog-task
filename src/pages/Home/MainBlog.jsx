@@ -8,13 +8,13 @@ function MainBlog() {
     return (
         <section className="main-blog">
             <div className="main-blog__container">
-                <div className="main-blog__col main-blog__col--1">
+                <div >
                    <CoverImage/>
                 </div>
-                <div className="main-blog__col main-blog__col--2">
+                <div >
                    <Blog/>
                 </div>
-                <div className="main-blog__col main-blog__col--3">
+                <div >
                     <Markting/>
                 </div>
             </div>
