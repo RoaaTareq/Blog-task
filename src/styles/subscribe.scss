@@ -1,0 +1,42 @@
+.subcribe{
+    width: 300px;
+    height: 272px;
+    border:1px solid #f0F0F0;
+    padding: 12px;
+}
+.wrapp-title{
+    display: flex
+}
+.text-email{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color:#333333
+}
+.input-email{
+    width: 252px;
+    height: 40px;
+    border-radius: 4px;
+    border:1px solid #d9d9d9;
+    background-color: #fafafa;
+}
+.btn-submit{
+    width: 140px;
+    height: 34px;
+color:#FFFF;
+border: none;
+font-size: 12px;
+font-weight: 700;
+line-height: 16px;
+text-align: center;
+background-color: #B0062A;
+border-radius: 4px;
+
+font-family: "Montserrat", sans-serif;
+
+}
+
+.wrapp-email{
+    display: flex;
+    flex-direction: column;
+}
