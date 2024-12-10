@@ -1,53 +1,12 @@
-.main-blog {
-    
+.main-blog__container{
+    display: flex;
+ gap: 10%;
+}
+.first-section{
+    display: flex;
+   width: 862.5px;
+}
 
-    &__container {
-        display: flex;
-         /* Distribute space evenly */
-        
-    }
-
-    &__col {
-       
-       
-        
-      
-        flex: 1; 
-       
-    }
-
-    &__col--1,
-    &__col--3 {
-        flex: 1; /* These columns will take equal width by default */
-    }
-
-    &__col--2 {
-        flex: 1; 
-     
-        border-left: 1px solid #F0F0F0;
-        border-right: 1px solid #F0F0F0;
-        padding: 30px;
-    }
-
-   
-
-    /* Responsive design for smaller screens */
-    @media (max-width: 1024px) {
-        &__container {
-            flex-direction: column; /* Stack columns vertically */
-            gap: 10px; /* Reduce gap between columns */
-        }
-
-        &__col {
-            flex: 1 1 100%; 
-        }
-       
-    }
-
-    
-    @media (max-width: 480px) {
-        &__container {
-            gap: 5px; 
-        }
-    }
+.second-section{
+    width: 577.5px;
 }

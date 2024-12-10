@@ -8,13 +8,12 @@ function MainBlog() {
     return (
         <section className="main-blog">
             <div className="main-blog__container">
-                <div >
+                <div className='first-section' >
                    <CoverImage/>
-                </div>
-                <div >
                    <Blog/>
                 </div>
-                <div >
+               
+                <div className='second-section' >
                     <Markting/>
                 </div>
             </div>
