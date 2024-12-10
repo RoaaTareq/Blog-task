@@ -1,0 +1,24 @@
+
+.marketing-wrapper {display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+max-width: 600px; /* Adjust max-width if needed */
+margin: 0 auto;
+}
+
+
+.line {
+flex-grow: 1;
+height: 1px;
+background-color: #333;
+}
+
+/* Styling the text */
+.text {
+margin: 0 20px; /* Space between the lines */
+font-size: 24px;
+font-weight: bold;
+color: #333;
+}
+

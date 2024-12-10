@@ -3,7 +3,7 @@
 
     &__container {
         display: flex;
-        justify-content: space-between; /* Distribute space evenly */
+         /* Distribute space evenly */
         
     }
 
@@ -32,7 +32,7 @@
    
 
     /* Responsive design for smaller screens */
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         &__container {
             flex-direction: column; /* Stack columns vertically */
             gap: 10px; /* Reduce gap between columns */
@@ -41,6 +41,7 @@
         &__col {
             flex: 1 1 100%; 
         }
+       
     }
 
     
