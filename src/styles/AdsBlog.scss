@@ -1,0 +1,37 @@
+
+.marketing-wrapper-blog {display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 728px;
+    max-width: 600px; /* Adjust max-width if needed */
+    margin: 20px auto ;
+    color: #F0F0F0;
+}
+    
+    
+    .line {
+    flex-grow: 1;
+    height: 3px;
+    background-color: #F0F0F0;
+    }
+    
+    /* Styling the text */
+    .text {
+       
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+       color: #707070;
+        
+    }
+    
+    .banner-blog{
+       
+        width: 720px;
+        height: 90px;
+        display: flex
+    
+    }
+    
+    

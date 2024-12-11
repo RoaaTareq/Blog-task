@@ -7,12 +7,14 @@ import Charts from './Blogsection/Chart';
 import TagsBlogs from './Blogsection/TagsBlog';
 import CardBlog from './Blogsection/CardBolg';
 import Author from './Blogsection/Auther';
+import Ads from './Blogsection/ADsbig'
 
 function Blog() {
     return (
         <section className="blog">
             <div className="blog__container">
             <Intro/>
+            <Ads/>
             <Abstract/>
             <SubSection/>
             <Charts/>
