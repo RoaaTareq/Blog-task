@@ -8,21 +8,21 @@ function Tags() {
         <h6 className="tags__title">TAGS</h6>
         <div className="tags__list">
           <div className="tags__group">
-            <span className="tags__item">Tag 1</span>
-            <span className="tags__item">Tag 2</span>
-            <span className="tags__item">Tag 3</span>
-            <span className="tags__item">Tag 4</span>
+            <span className="tags__item">Health</span>
+            <span className="tags__item">Life </span>
+            <span className="tags__item">Women</span>
+            <span className="tags__item">Men</span>
           </div>
           <div className="tags__group">
-            <span className="tags__item">Tag 5</span>
-            <span className="tags__item">Tag 6</span>
-            <span className="tags__item">Tag 7</span>
-            <span className="tags__item">Tag 8</span>
+            <span className="tags__item">Family’s Health</span>
+            <span className="tags__item">Nutrition</span>
+            <span className="tags__item">Kids</span>
+           
           </div>
           <div className="tags__group">
-            <span className="tags__item">Tag 9</span>
-            <span className="tags__item">Tag 10</span>
-            <span className="tags__item">Tag 11</span>
+            <span className="tags__item">Diseases</span>
+            <span className="tags__item">Habits</span>
+            <span className="tags__item">Healty</span>
           </div>
         </div>
       </div>
