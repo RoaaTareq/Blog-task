@@ -133,7 +133,12 @@
   line-height: 16px;
   gap: 8px;
   cursor: pointer;
+  
  
+}
+.navbar__nav-list-item ,.navbar__nav-dropdown-item{
+  border-left: .5px solid white;
+    padding-left: .6px;
 }
 .navbar__select{
   background-color: transparent;

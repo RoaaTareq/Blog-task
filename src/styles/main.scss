@@ -1,7 +1,7 @@
 .top-section {
     position: relative; 
     width: 100%;
-    height: 916px;
+    height: 916px; // consider using min-height or vh if you want it responsive
 
     &__container {
         position: relative; 
@@ -13,7 +13,7 @@
         width: 100%;
         height: 916px;
         object-fit: cover; 
-        position: absolute; 
+        position: relative; 
         top: 0;
         left: 0;
         filter: brightness(50%);
@@ -37,8 +37,8 @@
     &__title {
         position: absolute;
         bottom: 30px;
-        left: 43%;
-        transform: translate(-52%, 50%);
+        left: 26%;
+        transform: translate(0%, 50%);
         color: white;
         font-size: 60px;
         font-weight: 700;
@@ -49,73 +49,90 @@
     &__flex {
         display: flex;
     }
+    &__arrow{
+        display: none;
+    }
+
+    // Media query for Tablets
+    @media (max-width: 1024px) {
+        height: 700px;  // Reduce height for tablets
+
+        &__category {
+            font-size: 14px;
+            padding: 4px;
+            top: 96%;
+            left: 8%;
+        }
+
+        &__title {
+            font-size: 48px;
+            width: 641px;
+            bottom: -27%;
+            left: 10%;
+            transform: translate(0%, -0%);
+            line-height: 58.51px;
+        }
+        &__arrow{
+            display: none;
+        }
+    }
+
+    // Media query for Mobile devices
+    @media (max-width: 768px) {
+        height: 500px;  // Reduce height for mobile
+
+        &__category {
+            font-size: 14px;
+        padding: 4px;
+        top: 139%;
+        left: 5%;
+        transform: translate(24px, 10px);
+        }
+
+        &__title {
+            font-size: 48px;
+            width: 641px;
+            bottom: -70%;
+            left: 7%;
+            transform: translate(1%, 56%);
+            line-height: 58.51px;
+        }
+
+        &__image {
+            filter: brightness(40%);
+        }
+        &__arrow{
+            display: none;
+        }
+    }
+
+    // Media query for smaller mobile devices
+    @media (max-width: 600px) {
+        &__category {
+            font-size: 12px;
+            padding: 3px;
+            left: 0%;
+        }
+
+        &__title {
+            font-size: 24px;
+            width: 286px;
+            bottom: -58%;
+           
+            transform: translate(0%, 50%);
+            line-height: 29.26px;
+        }
+
+        &__image {
+            filter: brightness(40%);
+        }
+        &__arrow{      
+        display: block;
+        position: absolute;
+        bottom: -72%;
+        left: 34%;
+        width: 56px;
+        height: 56px;
+        transform: translate(10px, 10px);
+        }}
 }
-//     // Media query for Tablets
-//     @media (max-width: 1024px) {
-//         height: 700px;
-
-//         &__category {
-//             font-size: 14px;
-//             padding: 4px;
-//             top: 80%; 
-//             left: 20%;
-//         }
-
-//         &__title {
-//             font-size: 48px;
-//             width: 641px;
-//             bottom: 20px;
-//             left: 50%;
-//             transform: translateX(-50%);
-//             line-height: 58.51px;
-//         }
-//     }
-
-//     // Media query for Mobile devices
-//     @media (max-width: 768px) {
-//         height: 500px;
-
-//         &__category {
-//             font-size: 12px;
-//             padding: 3px;
-//             top: 85%;
-//             left: 15%;
-//         }
-
-//         &__title {
-//             font-size: 48px;
-//             width: 641px;
-//             bottom: 20px;
-//             left: 50%;
-//             transform: translateX(-50%);
-//             line-height: 58.51px;
-//         }
-        
-//         &__image {
-//             filter: brightness(40%);
-//         }
-//     }
-//     @media (max-width: 600px) {
-//         height: 500px;
-
-//         &__category {
-//             font-size: 12px;
-//             padding: 3px;
-//             top: 85%;
-//             left: 15%;
-//         }
-
-//         &__title {
-//             font-size: 24px;
-//             width: 286px;
-//             bottom: 20px;
-//             left: 50%;
-//             transform: translateX(-50%);
-//             line-height: 29.26px;
-//         }
-        
-//         &__image {
-//             filter: brightness(40%);
-//         }
-//     }
-// }

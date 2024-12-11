@@ -12,10 +12,10 @@ function Home(){
       <>
       <Navbar/>
         <TopSection/>
-        <MainBlog/>
-        <Card/>
+        {/* <MainBlog/>
+        <Card/> */}
         {/* <Slider/> */}
-        <Footer/>
+        {/* <Footer/> */}
       </>
        
     )
