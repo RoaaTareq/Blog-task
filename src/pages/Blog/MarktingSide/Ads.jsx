@@ -11,7 +11,7 @@ function Ads (){
     <span className="text">Marketing</span>
     <span className="line"></span>
   </div>
-  <img src={Banner} alt="Ads" />
+  <img src={Banner} alt="Ads" className="banner" />
 
         </div>
       </section>

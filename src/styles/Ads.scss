@@ -2,23 +2,35 @@
 .marketing-wrapper {display: flex;
 align-items: center;
 justify-content: center;
-width: 100%;
+width: 300px;
 max-width: 600px; /* Adjust max-width if needed */
-margin: 0 auto;
+margin: 20px 0 ;
+color: #F0F0F0;
 }
 
 
 .line {
 flex-grow: 1;
 height: 1px;
-background-color: #333;
+background-color: #F0F0F0;
 }
 
 /* Styling the text */
 .text {
-margin: 0 20px; /* Space between the lines */
-font-size: 24px;
-font-weight: bold;
-color: #333;
+   
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+   color: #707070;
+    
+}
+
+.banner{
+   
+    width: 300px;
+    height: 250px;
+    display: flex
+
 }
 

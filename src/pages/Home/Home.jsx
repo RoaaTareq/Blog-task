@@ -13,7 +13,7 @@ function Home(){
       <Navbar/>
         <TopSection/>
         <MainBlog/>
-        <Card/> 
+        {/* <Card/>  */}
         <Footer/>
       </>
        
