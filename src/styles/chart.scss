@@ -1,58 +1,110 @@
 .blog {
-    &__quote-section {
-      display: flex;
-      align-items: center;
-         }
-  
-    &__quote {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-bottom: 20px; // Adds space below the quote section
-    }
-  
-    &__quote-iconone {
-      width: 120px;
+  &__quote-section {
+    display: flex;
+    align-items: center;
+  }
+
+  &__quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px; // Adds space below the quote section
+  }
+
+  &__quote-iconone {
+    width: 120px;
     height: 120px;
     position: absolute;
     left: 22%;
     z-index: -1;
     transform: translate(38%, -5%);
+  }
 
-    }
-    &__quote-icon {
-      width: 120px;
-      height: 120px;
-      position: absolute;
-      left: 38%;
-      z-index: -1;
-      transform: translate(9%, -111%);
-      rotate: 183deg;
-    
+  &__quote-icon {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 38%;
+    z-index: -1;
+    transform: translate(9%, -111%);
+    rotate: 183deg;
+  }
 
-    }
-  
-    &__quote-text {
-      font-size: 26px;
-      font-weight: 300;
-      line-height: 40px;
-     width: 294px;
+  &__quote-text {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 40px;
+    width: 294px;
     text-align: left;
     font-family: "Noto Serif", serif;
-     
+  }
 
+  &__chart {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; // Adds space above the chart image
+  }
+
+  &__chart-image {
+    width: 387px; // Makes sure the chart image takes the full width
+  }
+
+  // Mobile and Tablet Media Queries
+  @media (max-width: 768px) { // Tablet and mobile
+    &__quote-text {
+      font-size: 22px;
+      width: 90%; // Makes the text width more flexible on small screens
+      text-align: center; // Centers text on smaller screens
     }
-  
-    &__chart {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px; // Adds space above the chart image
-    }
-  
+
     &__chart-image {
-      width: 387px; // Makes sure the chart image takes the full width
-     
+      width: 100%; // Ensures the chart image is responsive on smaller screens
+    }
+
+    &__quote-iconone,
+    &__quote-icon {
+      width: 100px;
+      height: 100px;
+      left: 30%;
+      transform: translate(30%, -5%);
     }
   }
-  
+
+  @media (max-width: 600px) { // Mobile
+    &__quote-text {
+      font-size: 26px; // Smaller text size for mobile
+      width: 251px;
+      font-weight: 300;
+      line-height: 40px;
+      text-align: left;
+       // Ensures the text width fits well on mobile
+    }
+    &__quote-section {
+flex-direction: column;
+    }
+
+    &__quote-iconone {
+      left: 2%;
+      transform: translate(30%, 7%);
+  }
+    &__quote-icon {
+      width: 100px;
+      height: 100px;
+      left: 75%;
+      transform: translate(49%, -172%);
+     
+  }
+    
+
+    &__chart {
+      flex-direction: column; // Stacks the chart on mobile for better layout
+      align-items: center; // Centers the chart on the screen
+    }
+
+    &__chart-image {
+      width: 289px; // Ensures the chart image doesn't overflow on mobile screens
+    }
+  }
+
+}

@@ -108,7 +108,13 @@
             font-size: 12px;
         }
     }
-
+    @media (max-width: 600px) {
+      
+            .footer .footer__list {
+              
+                flex-direction: column;
+            }
+    }
     @media (max-width: 480px) {
         .footer__container {
             width: 95%;
