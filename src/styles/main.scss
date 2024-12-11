@@ -91,7 +91,8 @@
 
         &__title {
             font-size: 48px;
-            width: 641px;
+            max-width: 641px;
+            width: 100%;
             bottom: -70%;
             left: 7%;
             transform: translate(1%, 56%);
@@ -112,12 +113,13 @@
             font-size: 12px;
             padding: 3px;
             left: 0%;
+            top: 88%;
         }
 
         &__title {
             font-size: 24px;
             width: 286px;
-            bottom: -58%;
+            bottom: -12%;
            
             transform: translate(0%, 50%);
             line-height: 29.26px;
@@ -125,11 +127,13 @@
 
         &__image {
             filter: brightness(40%);
+            min-width: 320px;
+            height: 653px;
         }
         &__arrow{      
         display: block;
         position: absolute;
-        bottom: -72%;
+        bottom: -26%;
         left: 34%;
         width: 56px;
         height: 56px;
