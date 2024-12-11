@@ -1,9 +1,8 @@
-// Footer.scss
-
 .footer {
     background-color: #000000;
     color: #fff;
     padding: 34.35px 0;
+    position: relative; // To position the "Back to Top" button properly
 
     &__container {
         width: 80%;
@@ -32,9 +31,8 @@
         line-height: 17.07px;
         margin: 0 15px;
 
-        // Add hover effect for interactivity
         &:hover {
-            color: #f39c12; // Add a hover color
+            color: #f39c12;
         }
     }
 
@@ -42,51 +40,94 @@
         font-size: 10px;
         font-weight: 600;
         line-height: 12.19px;
-        text-align: center;      
-        color: #F0F0F0; 
+        text-align: center;
+        color: #F0F0F0;
         margin-top: 20px;
+    }
+
+    // Back to Top button styling
+    &__back-to-top {
+        position: absolute;
+        bottom: 20px;  // Position it near the bottom of the footer
+        right: 20px;   // Align it to the right side
+        padding: 10px 20px;
+        background-color: #fff; // Highlight color for the button
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 14px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: #e67e22; // Darker hover color
+        }
     }
 
     // Media Queries for Responsiveness
 
     @media (max-width: 1200px) {
-        &__container {
+        .footer__container {
             width: 90%;  // Reduce container width for medium screens
         }
 
-        &__item {
+        .footer__item {
             font-size: 13px;  // Slightly smaller text for medium screens
         }
     }
 
     @media (max-width: 768px) {
-        &__list {
-            flex-direction: column;  // Stack the menu items vertically on small screens
-            align-items: center;  // Center-align the items
+        .footer {
+            padding-top: 50%;
         }
 
-        &__item {
-            margin: 10px 0;  // Reduce spacing between items
+        .footer__list {
+            align-items: center;
+            gap: 20px;
         }
 
-        &__text {
-            font-size: 9px;  // Make the text smaller on smaller screens
+        .footer__item {
+            margin: 10px 0;
+        }
+
+        .footer__text {
+            font-size: 9px;
             margin-top: 10px;
+        }
+
+        // Adjust the "Back to Top" button for small screens
+        .footer__back-to-top {
+            right: 10px;
+            bottom: 10px;
+            padding: 8px 16px;
+            font-size: 12px;
         }
     }
 
     @media (max-width: 480px) {
-        &__container {
-            width: 95%;  // Further reduce container width on very small screens
+        .footer__container {
+            width: 95%;
         }
 
-        &__item {
-            font-size: 12px;  // Reduce font size even more on mobile screens
+        .footer__item {
+            font-size: 12px;
         }
 
-        &__text {
-            font-size: 8px;  // Further reduce the font size
+        .footer__text {
+            font-size: 8px;
             margin-top: 5px;
+        }
+
+        .footer__back-to-top {
+            right: 10px;
+            bottom: 10px;
+            padding: 6px 12px;
+            font-size: 10px;
         }
     }
 }
